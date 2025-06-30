@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZyStatus</title>
+  <style>
+      :root {
+          --bg-color: #0f1117;
+          --text-color: #e3e3e3;
+          --accent-color: #00bcd4;
+          --card-bg: #1c1e25;
+      }
+
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          margin: 0;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: var(--bg-color);
+          color: var(--text-color);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 2rem 1rem;
+      }
+
+      header {
+          text-align: center;
+          margin-bottom: 3rem;
+      }
+
+      header h1 {
+          font-size: 2.5rem;
+          color: var(--accent-color);
+          margin-bottom: 0.5rem;
+      }
+
+      header p {
+          font-size: 1rem;
+          color: #aaa;
+      }
+
+      a {
+          color: var(--accent-color);
+      }
+
+      .status-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 2rem;
+          width: 100%;
+          max-width: 900px;
+      }
+
+      .status-card {
+          background: var(--card-bg);
+          padding: 1.5rem;
+          border-radius: 1rem;
+          text-align: center;
+          box-shadow: 0 0 10px #00000033;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .status-card:hover {
+          transform: scale(1.02);
+          box-shadow: 0 0 20px #00bcd466;
+      }
+
+      .status-card h2 {
+          font-size: 1.2rem;
+          color: var(--accent-color);
+          margin-bottom: 1rem;
+      }
+
+      .status-card a img {
+          border-radius: 0.5rem;
+          max-width: 100%;
+      }
+
+      .status-img-container {
+          background: #0e1115;
+          width: 120px;
+          margin: 0 auto;
+          border-radius: 100px;
+          padding: 0;
+          height: 30px;
+      }
+
+      @media (max-width: 600px) {
+          header h1 {
+              font-size: 2rem;
+          }
+
+          .status-card h2 {
+              font-size: 1rem;
+          }
+      }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ZyStatus</h1>
+  <p>Updated every 3 minutes.</p>
+</header>
+
+<section class="status-container">
+
+  <div class="status-card">
+    <h2><a href="https://zytronium.dev">Zytronium.dev</a></h2>
+    <div class="status-img-container">
+    <a href="https://uptime.betterstack.com/?utm_source=status_badge" target="_blank">
+      <img src="https://uptime.betterstack.com/status-badges/v3/monitor/20d0l.svg" alt="zytronium.dev status" height="30px" />
+    </a>
+    </div>
+  </div>
+
+  <div class="status-card">
+    <h2><a href="https://thefactionnexus.tech">TheFactionNexus.tech</a></h2>
+    <div class="status-img-container">
+    <a href="https://uptime.betterstack.com/?utm_source=status_badge" target="_blank">
+      <img src="https://uptime.betterstack.com/status-badges/v3/monitor/20d0g.svg" alt="thefactionnexus.tech status" height="30px" />
+    </a>
+    </div>
+  </div>
+
+  <div class="status-card">
+    <h2><a href="https://whatthefuckisakilometer.com">WhatTheFuckIsAKilometer.com</a></h2>
+    <div class="status-img-container">
+    <a href="https://uptime.betterstack.com/?utm_source=status_badge" target="_blank">
+      <img src="https://uptime.betterstack.com/status-badges/v3/monitor/20d0o.svg" alt="whatthefuckisakilometer.com status" height="30px"/>
+    </a>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>

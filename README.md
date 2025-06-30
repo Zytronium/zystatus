@@ -10,3 +10,7 @@ This is a site that displays the current stats of some of my websites.
 
 ## whatthefuckisakilometer.com:
 [![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/20d0o.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+
+---
+
+# [Visit Website](https://zytronium.github.io/zystatus/)
